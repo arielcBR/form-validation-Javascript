@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilita Dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <main class="container">
+        <div class="info-principal">
+            <div class="texto">
+                <h2>Facilita Dev</h2>
+                <p>Nunc at dolor purus. Duis massa turpis, laoreet nec ligula in, aliquam gravida leo. Quisque volutpat neque sit amet
+                    lacus consequat, vitae ullamcorper est vulputate. Nunc tincidunt faucibus tellus, at pulvinar dolor placerat non.
+                    Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lorem ac nulla egestas auctor ac a lacus.</p>
+            </div>
+            <div class="redes-sociais">
+                <ul class="lista-redesSociais">
+                    <li><a href="#" target="_blank"><img src="img/Instagram icon.png" alt="icone Instagram"></a></li>
+                    <li><a href="#" target="_blank"><img src="img/Git icon.png" alt="icone GitHub"></a></li>
+                    <li><a href="#" target="_blank"><img src="img/LinkedIn Icon.png" alt="icone LinkedIn"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container-form">
+            <h2 class="titulo-form">e-Book</h2>
+            <form action="" method="GET">
+                <fieldset class="formulario">
+                    <legend class="legenda">Cadastro</legend>
+                    <label class="legenda-inputs" for="nome">Nome e sobrenome</label>
+                    <input class="input-texto" id="nome" name="nome" type="text" placeholder="Seu nome" autofocus required>
+
+                    <label class="legenda-inputs" for="data-nascimento">Data de nascimento</label>
+                    <input class="input-texto" id="data-nascimento" name="data-nascimento" type="date" minlength="8" maxlength="8" required>
+
+                    <label class="legenda-inputs" for="email">Seu e-mail</label>
+                    <input class="input-texto" id="email" name="email" type="email" placeholder="Seu melhor e-mail" minlength="7" maxlength="60" required>
+
+                    <label class="legenda-inputs" for="telefone">Seu telefone</label>
+                    <input class="input-texto" id="telefone" name="telefone" type="number" placeholder="(11) 99999-9999" minlength="10" maxlength="11" required>
+
+                    <div class="checkbox">
+                        <input type="checkbox" name="termos" id="aceita-termos" value="sim">
+                        <label class="text-terms" for="aceita-termos">I agree to <a href="#">terms</a> and <a href="#">conditions</a> and the privacy policy.</label>
+                    </div>
+
+                    <button class="btn-submit" type="submit">
+                        <img src="img/message-circle.png" alt="icone mensagem">
+                        <span>Enviar</span>
+                    </button>
+                    
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
