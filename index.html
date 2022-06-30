@@ -29,20 +29,32 @@
 
         <div class="container-form">
             <h2 class="titulo-form">e-Book</h2>
-            <form action="" method="GET">
+            <form id="form">
                 <fieldset class="formulario">
                     <legend class="legenda">Cadastro</legend>
-                    <label class="legenda-inputs" for="nome">Nome e sobrenome</label>
-                    <input class="input-texto" id="nome" name="nome" type="text" placeholder="Seu nome" autofocus required>
+                    <div class="input-container">
+                        <label class="legenda-inputs" for="nome">Primeiro e último sobrenome</label>
+                        <input class="input-texto" id="nome" name="nome" type="text" placeholder="Seu nome" maxlength="40" pattern="(^[a-zA-ZçÇáÁ]{2,20}\s[a-zA-ZçÇáÁ]{2,}$)" title="Primeiro e último sobrenome" autofocus required>
+                        <span class="input-mensagem-erro">Lorem ipsum dolor sit amet</span>
+                    </div>
 
-                    <label class="legenda-inputs" for="data-nascimento">Data de nascimento</label>
-                    <input class="input-texto" id="data-nascimento" name="data-nascimento" type="date" minlength="8" maxlength="8" required>
+                    <div class="input-container">
+                        <label class="legenda-inputs" for="data-nascimento">Data de nascimento</label>
+                    <input class="input-texto" id="data-nascimento" name="data-nascimento" type="date" min="1920-01-01" max="2022-01-01">
+                    <span class="input-mensagem-erro">Lorem ipsum dolor sit amet</span>
+                    </div>
 
-                    <label class="legenda-inputs" for="email">Seu e-mail</label>
-                    <input class="input-texto" id="email" name="email" type="email" placeholder="Seu melhor e-mail" minlength="7" maxlength="60" required>
+                    <div class="input-container">
+                        <label class="legenda-inputs" for="email">Seu e-mail</label>
+                        <input class="input-texto" id="email" name="email" type="email" placeholder="Seu melhor e-mail">
+                        <span class="input-mensagem-erro">Lorem ipsum dolor sit amet</span>
+                    </div>
 
-                    <label class="legenda-inputs" for="telefone">Seu telefone</label>
-                    <input class="input-texto" id="telefone" name="telefone" type="number" placeholder="(11) 99999-9999" minlength="10" maxlength="11" required>
+                    <div class="input-container">
+                        <label class="legenda-inputs" for="telefone">Seu telefone</label>
+                        <input class="input-texto" id="telefone" name="telefone" type="number" placeholder="(11)99999-9999">
+                        <span class="input-mensagem-erro">Lorem ipsum dolor sit amet</span>
+                    </div>
 
                     <div class="checkbox">
                         <input type="checkbox" name="termos" id="aceita-termos" value="sim">
