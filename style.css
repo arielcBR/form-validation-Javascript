@@ -112,9 +112,9 @@ fieldset{
 .input-texto{
     width: 85%;
     height: 41px;
-    padding: 5px;
+    padding: 7px;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 16px;
     background: #DFDADA;
     color: black;
     border-radius: 6px;
@@ -129,12 +129,8 @@ input::-webkit-datetime-edit, input::-webkit-input-placeholder {
 
 .input-mensagem-erro{
     display: block;
+    visibility: hidden;
     margin: 0 auto;
-    visibility: 80%;
-}
-
-.input-correto{
-    border: 2px solid rgb(0, 255, 0);
 }
 
 .input-incorreto {
@@ -145,18 +141,11 @@ span{
     padding: 5px;
 }
 
-.span-correta{
+.span-incorreto {
     font-family: "Jura", sans-serif;
     font-weight: bold;
     font-size: 14px;
-    color: rgb(0, 255, 0);
-}
-
-.span-incorreta {
-    font-family: "Jura", sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    color: rgb(255, 0, 0);
+    color: red;
 }
 
 .checkbox{

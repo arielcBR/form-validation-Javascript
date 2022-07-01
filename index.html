@@ -33,27 +33,27 @@
                 <fieldset class="formulario">
                     <legend class="legenda">Cadastro</legend>
                     <div class="input-container">
-                        <label class="legenda-inputs" for="nome">Primeiro e último sobrenome</label>
-                        <input class="input-texto" id="nome" name="nome" type="text" placeholder="Seu nome" maxlength="40" pattern="(^[a-zA-ZçÇáÁ]{2,20}\s[a-zA-ZçÇáÁ]{2,}$)" title="Primeiro e último sobrenome" autofocus required>
-                        <span class="input-mensagem-erro">Lorem ipsum dolor sit amet</span>
+                        <label class="legenda-inputs" for="nome">Nome</label>
+                        <input class="input-texto" id="nome" name="nome" type="text" placeholder="Seu nome" autofocus>
+                        <span class="input-mensagem-erro" id="span-nome">Lorem ipsum dolor sit.</span>
                     </div>
 
                     <div class="input-container">
-                        <label class="legenda-inputs" for="data-nascimento">Data de nascimento</label>
-                    <input class="input-texto" id="data-nascimento" name="data-nascimento" type="date" min="1920-01-01" max="2022-01-01">
-                    <span class="input-mensagem-erro">Lorem ipsum dolor sit amet</span>
+                    <label class="legenda-inputs" for="data-nascimento">Data de nascimento</label>
+                    <input class="input-texto" id="data-nascimento" name="data-nascimento" type="date" min="1920-01-01" max="2022-01-01" required>
+                    <span class="input-mensagem-erro" id="span-data">Lorem ipsum dolor sit.</span>
                     </div>
 
                     <div class="input-container">
                         <label class="legenda-inputs" for="email">Seu e-mail</label>
-                        <input class="input-texto" id="email" name="email" type="email" placeholder="Seu melhor e-mail">
-                        <span class="input-mensagem-erro">Lorem ipsum dolor sit amet</span>
+                        <input class="input-texto" id="email" name="email" type="email" placeholder="Seu melhor e-mail" required>
+                        <span class="input-mensagem-erro" id="span-email">Lorem ipsum dolor sit.</span>
                     </div>
 
                     <div class="input-container">
                         <label class="legenda-inputs" for="telefone">Seu telefone</label>
-                        <input class="input-texto" id="telefone" name="telefone" type="number" placeholder="(11)99999-9999">
-                        <span class="input-mensagem-erro">Lorem ipsum dolor sit amet</span>
+                        <input class="input-texto" id="telefone" name="telefone" type="number" placeholder="(11)99999-9999" required>
+                        <span class="input-mensagem-erro" id="span-telefone">Lorem ipsum dolor sit.</span>
                     </div>
 
                     <div class="checkbox">
