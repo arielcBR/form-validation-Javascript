@@ -18,7 +18,8 @@ function validar (event) {
     event.preventDefault();
     validaNome(nome);
     validaData(dataRecebida);
-    //validaEmail(email.value);
+    validaEmail(email);
+    validaTelefone(telefone);
 }
 
 function validaNome(input) {
@@ -50,7 +51,6 @@ function validaData(input) {
     }
 
     else if (input.validity.valueMissing) {
-        console.log(input.validity.valueMissing);
         sinalizaInput(false, elementos, "Preencha a data");
     }
 
@@ -61,14 +61,40 @@ function validaData(input) {
 
 function validaEmail(input) {
     const elementos = [input, spanEmail];
+    const email = input.value.trim();
+    const pattern = /^[\w.-]+@[a-zA-Z]+\.[a-zA-Z]+$/
 
-    if (input.validity.valueMissing) {
+    if (email == "" || email == null) {
         sinalizaInput(false, elementos, "Preencha o seu e-mail");
     }
-    else if (input.validity.valid) {
-        sinalizaInput(false, elementos, "Preencha o seu e-mail");
+    else if (!input.validity.valid) {
+        sinalizaInput(false, elementos, "Preencha um e-mail");
+    }
+    else if (!email.match(pattern)) {
+        sinalizaInput(false, elementos, "e-mail inserido não é válido");
     }
     else {
+        sinalizaInput(true, elementos, "");
+    }
+}
+
+function validaTelefone(input) {
+    const elementos = [input, spanTelefone];
+    const telefone = input.value.trim();
+    const pattern = /^\d\d(\-)?\d{8,9}$/;
+    
+    if (telefone == "" || telefone == null) {
+        sinalizaInput(false, elementos, "Preencha o seu telefone");
+    }
+    else if (!input.validity.valid) {
+        sinalizaInput(false, elementos, "Preencha um telefone");
+    }
+    else if (!telefone.match(pattern)) {
+        sinalizaInput(false, elementos, "Telefone inserido não é válido");
+    }
+    else {
+        console.log(telefone);
+        console.log("Status: " + !telefone.match(pattern));
         sinalizaInput(true, elementos, "");
     }
 }
